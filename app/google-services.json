@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "818977233548",
+    "project_id": "careurplant",
+    "storage_bucket": "careurplant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818977233548:android:60f5864794f310e4e3b9a9",
+        "android_client_info": {
+          "package_name": "com.example.careurplant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0et-HZ9jonIDJ15gN-o9FdF3s9excZAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".homeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="85dp"
+        android:textColor="@color/black"
+        android:text="Heal your crop" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="90dp"
+        android:src="@drawable/heal_img" />
+    <Button
+        android:id="@+id/searchImgBtn"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take a picture"
+        android:textSize="30dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="90dp"/>
+
+</FrameLayout>
