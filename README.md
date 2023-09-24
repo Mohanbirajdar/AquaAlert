@@ -21,22 +21,4 @@ Android Studio: The primary IDE used for developing the Android application.
 Java: The programming language used for developing the Android app.
 
 Machine Learning: Integration of machine learning models for disease detection from uploaded images.
-
-Installation and Setup
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/yourusername/your-repository.git
-Open the project in Android Studio.
-
-Build and run the application on an Android device or emulator.
-
-How to Use
-Launch the app on your Android device.
-
-Upload an image of a plant.
-
-Wait for the app to process and analyze the image.
-
-View the results, including any detected diseases and recommended actions.
+the project is going on we will finish it as soon as possible
