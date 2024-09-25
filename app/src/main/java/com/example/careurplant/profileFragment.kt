@@ -39,8 +39,10 @@ class profileFragment : Fragment() {
             activity?.finish()
         }
         viewPagerAdapter=viewPagerAdapter(requireActivity().supportFragmentManager)
-        viewPagerAdapter.addFragments(myPostFragment,"My Post&Quary")
+        viewPagerAdapter.addFragments(MyPostQueryFragment(),"My Post&Quary")
+        viewPagerAdapter.addFragments(MyPostVideo(),"My PostVideo")
         binding.viewPager.adapter=viewPagerAdapter //need to be update
+        binding.tabLayout.setupWithViewPager(binding.viewPager)
         return binding.root
     }
 

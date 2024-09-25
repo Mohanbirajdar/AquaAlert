@@ -21,8 +21,9 @@ class viewPagerAdapter(fm:FragmentManager): FragmentPagerAdapter(fm,
     override fun getPageTitle(position: Int): CharSequence? {
         return titleList.get(position)
     }
-    fun addFragments(fragment: myPostFragment.Companion, title:String){
-       // fragmentList.add(fragment) needd to be update
+    fun addFragments(fragment: Fragment, title:String){
+        fragmentList.add(fragment)
         titleList.add(title)
     }
+
 }

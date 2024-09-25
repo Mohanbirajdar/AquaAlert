@@ -10,9 +10,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url= uri("https://maven.example.com") }
+
+
     }
+
 }
 
-rootProject.name = "CareUrPlant"
+rootProject.name = "AquaAlert"
 include(":app")
  

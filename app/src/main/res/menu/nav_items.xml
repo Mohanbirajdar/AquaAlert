@@ -6,19 +6,24 @@
         android:icon="@drawable/baseline_home_24"
         />
     <item
-        android:id="@+id/community"
-        android:title="comunity"
-        android:icon="@drawable/comunity"
+        android:id="@+id/Search"
+        android:title="Search"
+        android:icon="@drawable/search"
         />
     <item
-        android:id="@+id/cart"
-        android:title="Cart"
-        android:icon="@drawable/cart"
+        android:id="@+id/add"
+        android:title="Create Post"
+        android:icon="@drawable/add"
+        />
+    <item
+        android:id="@+id/post"
+        android:title="Posts"
+        android:icon="@drawable/post"
         />
     <item
         android:id="@+id/profile"
         android:title="You"
-        android:icon="@drawable/profile_icon"
+        android:icon="@drawable/user"
         />
 
 </menu>

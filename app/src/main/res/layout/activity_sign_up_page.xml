@@ -11,8 +11,8 @@
         android:id="@+id/profileImage"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="104dp"
-        android:src="@drawable/profile"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,12 +22,12 @@
         android:id="@+id/addImage"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/plus"
+        android:src="@drawable/add"
         app:civ_border_color="@color/white"
         app:civ_border_width="2dp"
         app:layout_constraintBottom_toBottomOf="@+id/profileImage"
         app:layout_constraintEnd_toEndOf="@+id/profileImage"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/profileImage"
         app:layout_constraintTop_toTopOf="@+id/profileImage"
         app:layout_constraintVertical_bias="0.84000003" />
@@ -48,6 +48,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:visibility="visible"
             tools:visibility="visible" />
@@ -67,6 +68,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:visibility="visible"
             tools:visibility="visible" />
 
@@ -87,6 +89,27 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Location"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:visibility="visible"
             tools:visibility="visible" />
 
@@ -97,24 +120,27 @@
         style="@style/Widget.Material3.Button.ElevatedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Register"
         android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/location"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/location"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        app:layout_constraintVertical_bias="0.097" />
 
     <TextView
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
         android:layout_marginBottom="16dp"
         android:text="Already have an account  ..Sign in?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SignUpBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/SignUpBtn"
+        app:layout_constraintVertical_bias="0.595" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

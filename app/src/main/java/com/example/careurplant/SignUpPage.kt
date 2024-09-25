@@ -70,7 +70,7 @@ class SignUpPage : AppCompatActivity() {
             }else {
                 if (binding.UserName.editText?.text.toString()
                         .equals("") or binding.email.editText?.text.toString()
-                        .equals("") or binding.password.editText?.text.toString().equals("")
+                        .equals("") or binding.password.editText?.text.toString().equals("") or binding.location.editText?.text.toString().equals("")
                 ) {
                     Toast.makeText(this, "Please fill all the information", Toast.LENGTH_SHORT)
                         .show()
@@ -83,6 +83,7 @@ class SignUpPage : AppCompatActivity() {
                             user.username = binding.UserName.editText?.text.toString()
                             user.email = binding.email.editText?.text.toString()
                             user.password = binding.password.editText?.text.toString()
+                            user.location=binding.location.editText?.text.toString()
                             Firebase.firestore.collection(USER_NODE)
                                 .document(Firebase.auth.currentUser!!.uid).set(user)
                                 .addOnSuccessListener {

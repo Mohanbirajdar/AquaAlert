@@ -1,27 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".communityFragment">
+    tools:context=".SearchFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to our comunity"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"/>
-    <androidx.appcompat.widget.SearchView
-        android:id="@+id/search_comunity"
-        android:layout_width="350dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="40dp"
-        android:paddingLeft="20dp"
-        app:queryHint="Search Comunity"
-        />
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Welcome To Community" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/search_view"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:background="@drawable/search_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/materialToolbar"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/materialToolbar"
+        app:layout_constraintVertical_bias="0.084"
+        app:queryHint="Search Comunity" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/searchbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="@+id/search_view"
+        app:layout_constraintEnd_toEndOf="@+id/search_view"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
